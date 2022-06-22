@@ -153,14 +153,91 @@ public class MyActionListener implements ActionListener
 		{
 			try
 			{
-				FileReader fr=new FileReader("D:/Divyaraj/Images/BJP.txt");    
-		        int i;   
-		        while((i=fr.read())!=+1) 
-		        this.cot = Integer.parseInt(String.valueOf((int)i));
-		        this.cot = cot+1;
-		        FileWriter myWriter3 = new FileWriter("D:/Divyaraj/Images/BJP.txt");
-				myWriter3.write(cot);
-				myWriter3.close(); 
+				
+				char ch[] = new char[20];
+				FileReader fr = new FileReader("BJP.txt");
+				fr.read(ch);
+				fr.close();
+				s=String.valueOf(ch);
+				int i=Integer.parseInt(s.trim());
+				i++;
+		        
+				FileWriter fw=new FileWriter("BJP.txt");
+				fw.write(String.valueOf(i));
+				fw.close();
+		        
+		        fr.close();
+			}
+			catch(Exception e4)
+			{
+				System.out.println(e4);
+			}
+		}
+		if(e.getActionCommand().equals("Congress"))
+		{
+			try
+			{
+				
+				char ch[] = new char[20];
+				FileReader fr = new FileReader("CONG.txt");
+				fr.read(ch);
+				fr.close();
+				s=String.valueOf(ch);
+				int i=Integer.parseInt(s.trim());
+				i++;
+		        
+				FileWriter fw=new FileWriter("CONG.txt");
+				fw.write(String.valueOf(i));
+				fw.close();
+		        
+		        fr.close();
+			}
+			catch(Exception e4)
+			{
+				System.out.println(e4);
+			}
+		}
+		if(e.getActionCommand().equals("AAP"))
+		{
+			try
+			{
+				
+				char ch[] = new char[20];
+				FileReader fr = new FileReader("AAP.txt");
+				fr.read(ch);
+				fr.close();
+				s=String.valueOf(ch);
+				int i=Integer.parseInt(s.trim());
+				i++;
+		        
+				FileWriter fw=new FileWriter("AAP.txt");
+				fw.write(String.valueOf(i));
+				fw.close();
+		        
+		        fr.close();
+			}
+			catch(Exception e4)
+			{
+				System.out.println(e4);
+			}
+		}
+		if(e.getActionCommand().equals("NCP"))
+		{
+			try
+			{
+				
+				char ch[] = new char[20];
+				FileReader fr = new FileReader("NCP.txt");
+				fr.read(ch);
+				fr.close();
+				s=String.valueOf(ch);
+				int i=Integer.parseInt(s.trim());
+				i++;
+		        
+				FileWriter fw=new FileWriter("NCP.txt");
+				fw.write(String.valueOf(i));
+				fw.close();
+		        
 		        fr.close();
 			}
 			catch(Exception e4)
@@ -169,7 +246,6 @@ public class MyActionListener implements ActionListener
 			}
 		}
 
-	
 	}
 
 
