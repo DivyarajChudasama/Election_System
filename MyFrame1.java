@@ -28,7 +28,7 @@ public class MyFrame1 extends Frame
         JButton b2 = new JButton("Result");
         b2.setIcon(new ImageIcon(this.getClass().getResource("result.png")));
         //b2.setBackground(Color. RED);
-        b2.setBounds(585,320,280,110);
+        b2.setBounds(585,320,280,110); 
         add(b2);
          b2.addActionListener(ml);
 
